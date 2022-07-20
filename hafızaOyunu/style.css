@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: beige;
+    font-family: 'Gochi Hand', cursive;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 70px;
+    font-size: 100px;
+    align-items: center;
+}
+
+.main {
+    display: flex;
+    position: absolute;
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-wrap: wrap;
+    border: 2px solid black;
+    padding: 30px;
+    background-image: url("bg22.jpg");
+    align-items: center;
+
+}
+
+.square {
+
+    background-color: beige;
+    margin: auto;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    box-shadow: 5px 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.rotatesqaure {
+    transform: rotateY(180deg);
+
+}
+
+#leveldescription {
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    transform: translate(-2%, -2%);
+    padding: 10px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+#leveldescription h2 {
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 40px;
+
+}
+
+button {
+    margin-top: 5px;
+    background-color: black;
+    cursor: pointer;
+    color: white;
+    padding: 10px;
+    font-family: 'Gochi Hand', cursive;
+    font-size: 30px;
+}
+
+.buton {
+    margin-top: 10px;
+    background-color: #FAFDD6;
+    cursor: pointer;
+    color: black;
+    padding: 10px;
+    font-family: 'Gochi Hand', cursive;
+    font-size: 60px;
+    font-weight: 1000px;
+    width: 500px;
+    height: 100px;
+    cursor: pointer;
+}
+
+#mode {
+    margin: 150px 40px;
+    background-image: url("bg22.jpg");
+    color: black;
+    cursor: pointer;
+}
+
+.card {
+    margin-top: 10px;
+    padding: 30px;
+    width: 500px;
+    height: auto;
+    font-size: 30px;
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1399px) {
+    h1 {
+        margin-top: 0px;
+        margin-left: 100px;
+    }
+
+    #mode {
+        margin: 170px 10px;
+    }
+
+    .main {
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -30%);
+    }
+}
